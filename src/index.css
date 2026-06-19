@@ -1,0 +1,47 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: #030704;
+  /* Pendaran Aurora Neon Hijau Emerald ala Gemini AI (Pekat & Anti-Gagal) */
+  background-image: 
+    radial-gradient(circle at 5% 10%, rgba(16, 185, 129, 0.45) 0%, transparent 55%),
+    radial-gradient(circle at 95% 85%, rgba(52, 211, 153, 0.35) 0%, transparent 50%),
+    radial-gradient(circle at 85% 15%, rgba(5, 150, 105, 0.25) 0%, transparent 40%),
+    radial-gradient(circle at 20% 80%, rgba(16, 185, 129, 0.2) 0%, transparent 50%);
+  background-attachment: fixed;
+  background-size: cover;
+  color: #E2E8F0;
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* Animasi mengambang pelan untuk kartu login */
+@keyframes auroraGlow {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0px); }
+}
+
+/* =======================================================
+   EFEK ANIMASI ZOOM PREMIUM UNTUK KARTU KHAISIAT HERBAL 
+   ======================================================= */
+.need-card {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease, border-color 0.4s ease !important;
+}
+
+/* Saat kursor menyentuh kartu (Hover Effect) */
+.need-card:hover {
+  transform: scale(1.05) translateY(-5px) !important; /* Membesar 5% & terangkat sedikit */
+  border-color: rgba(16, 185, 129, 0.6) !important; /* Garis tepi hijau neon menyala */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 0 25px rgba(16, 185, 129, 0.25) !important; /* Efek pendaran neon di bawah kartu */
+}
+
+/* Efek zoom halus khusus untuk gambar di dalam kartu */
+.need-card img {
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+.need-card:hover img {
+  transform: scale(1.03) !important; /* Gambar di dalam ikut membesar sedikit */
+}
