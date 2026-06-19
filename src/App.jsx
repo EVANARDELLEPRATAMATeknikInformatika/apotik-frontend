@@ -36,7 +36,7 @@ function App() {
   const [authForm, setAuthForm] = useState({ name: '', email: '', password: '' });
   const [loginHistory, setLoginHistory] = useState([]);
 
-  const apiUrl = 'http://localhost:8000/api';
+  const apiUrl = 'https://apotik-backend-production.up.railway.app/api';
 
   useEffect(() => {
     if (token) {
